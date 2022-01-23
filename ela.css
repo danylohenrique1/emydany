@@ -1,0 +1,202 @@
+/*-------------------------RESET----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*-------------------------Layout----------------------------*/
+body{
+	background-color: #efefef;
+
+	font: normal 0.75rem "serif", sans-serif;
+	font-size: 80%;
+	letter-spacing: 2px;
+
+}
+
+#page{
+
+	width: 72%;
+	height: 600px;
+	padding: .75rem;
+	padding-bottom: 2rem;
+
+	margin: 1% auto;
+
+	background-color: white;
+
+	border: .25rem double #000;
+}
+
+.centralize{
+	margin: 0 auto;
+}
+div{
+	width: 80%;
+	margin: 10px auto;
+}
+
+/*-------------------------HEADER----------------------------*/
+#header{
+	text-align: center;
+	margin-top: 2rem;
+}
+
+nav{
+	margin-top: 5rem !important;
+	margin-bottom: 2rem !important;
+}
+ul.header{
+	text-align: center;
+
+	border-top: 0.15rem solid;
+	border-bottom: 0.07rem solid;
+
+	padding: 1rem 0;
+}
+
+ul li{
+	display: inline-block;
+
+
+	margin-right: 1.25rem;
+
+}
+
+ul li a{
+	color: black;
+
+	text-transform: uppercase;
+
+	padding: 0 .25rem;
+}
+
+ul li a.on, a:hover{
+	color: #cc3333;
+}
+
+
+/*-------------------------Listinha----------------------------*/
+
+.list{
+	align-items: center;
+	text-align: center;
+		margin-right: auto;
+	margin-left: auto;
+}
+ul.imagem{	
+	/*imagem como simbolo da lista*/
+	list-style-image: url(star.png);
+
+	margin-left: 1rem;
+
+}	
+
+.imagem li{
+	display: list-item;
+
+}
+
+
+.dentro{
+	width: 60%;
+}
+
+.button{
+	
+	width: 10rem;
+
+	margin: 10px auto;
+}
+
+/*-------------------------Sanfona----------------------------*/
+.sanfona img{
+	width: auto;
+}
+.sanfona li{
+	margin-right: 0px;
+}
+.sanfona div{
+	margin: 0;
+}
+.sanfona a{
+	padding: 0;
+}
+
+.sanfona{
+	height: 20rem;
+
+	overflow: hidden;
+
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/* Um peuqeno hack para evitar oscilações em alguns navegadores*/
+.sanfona ul{
+	width: 2000px;
+}
+
+.sanfona li{
+	margin: 0;
+
+	position: relative;
+	display: block;
+	height: 150px;
+	width: 100px;
+	float: left;
+
+	border-left: 1px solid #888;
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow:  0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+
+.sanfona ul :hover li{
+	width: 40px;
+}
+
+.sanfona ul li:hover{
+	width: 600px;
+}
+
+.sanfona li img{
+	display: block;
+	top: 0;
+
+	height: 20rem;
+	width: 40rem;
+
+}
+
+/*-------------------------Text----------------------------*/
+.text{
+	text-align: center;
+}
+
+.text p{
+	max-width: 370px;
+	margin: 0 auto;
+
+	line-height: 1.15rem;
+}
