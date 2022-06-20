@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nenem</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link rel="stylesheet" type="text/css" href="ela.css" />
+
+    <script src="../Javascript/quiz.js" defer></script>
+  </head>
+  <body>
+    <div id="page" class="centralize">
+      <div id="header" class="centralize">
+        <h1>EU TE AMO</h1>
+
+        <nav class="nav centralize">
+          <ul class="header centralize">
+            <li><a href="index.html">Você</a></li>
+            <li><a href="listinha.html">Listinha</a></li>
+            <li><a href="fotinhos.html">Fotinhos</a></li>
+            <li><a href="#">Quiz</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="quiz">
+        <h2 id="points">Pontuação: 0</h2>
+
+        <div id="form">
+          <div class="questionHeader">
+            <div id="index">0</div>
+            <div id="question">Pergunta que devera ser respondida</div>
+          </div>
+          <form action="javascript: passaResposta()">
+            <div class="questionBody">
+              <div>
+                <input
+                  type="radio"
+                  name="alternative"
+                  id="alternative1"
+                  class="radio"
+                  value="0"
+                />
+                <label for="alternative1" id="TextAlternative1"
+                  >alternative 1</label
+                >
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="alternative"
+                  id="alternative2"
+                  class="radio"
+                  value="1"
+                />
+                <label for="alternative2" id="TextAlternative2"
+                  >alternative 2</label
+                >
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="alternative"
+                  id="alternative3"
+                  class="radio"
+                  value="2"
+                />
+                <label for="alternative3" id="TextAlternative3"
+                  >alternative 3</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="alternative"
+                  id="alternative4"
+                  class="radio"
+                  value="3"
+                />
+                <label for="alternative4" id="TextAlternative4"
+                  >alternative 4</label
+                >
+              </div>
+            </div>
+
+            <input
+              type="submit"
+              value="Responder"
+              class="show buttonPersonalized"
+              id="aswer"
+            />
+          </form>
+          <form action="javascript: next()">
+            <button
+              value="next"
+              class="hidden buttonPersonalized btn"
+              id="next"
+            >
+              Próximo
+            </button>
+          </form>
+        </div>
+
+        <div id="congratulations" class="hidden">
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

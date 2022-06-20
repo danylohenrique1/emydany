@@ -1,48 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Nenem</title>
-	<link rel="stylesheet" type="text/css" href="ela.css">
+  <head>
+    <title>Nenem</title>
+    <link rel="stylesheet" type="text/css" href="ela.css" />
 
-	<script type="text/javascript">
-		function Alert() {
-			alert("Eu te amo <3");
-		}
-	</script>
-</head>
-<body>
-	<div id="page" class="centralize">
-		<div id="header" class="centralize">
-				<h1>EU TE AMO</h1>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../package/dist/sweetalert2.all.min.js "></script>
+    <link rel="stylesheet" href="../package/dist/sweetalert2.min.css" />
 
-				<nav class="nav centralize">
-				<ul class="header centralize">
-					<li><a href="ela.html">Você</a></li>
-					<li><a href="listinha.html">Listinha</a></li>
-					<li><a href="fotinhos.html">Fotinhos</a></li>
-					<li><a href="#">Borboletas</a></li>
-					<li><a href="#"></a></li>
-				</ul>
-			</nav>
-		</div>
+    <script type="text/javascript" id="modal">
+      function modal() {
+        Swal.fire({
+          title: 'Eu te amo, minha vida!',
+          confirmButtonText: 'Fechar',
+          focusConfirm: false,
+          width: 600,
+          padding: '3em',
+          color: '#F4B3C2',
+          background: '#fff url(/images/trees.png)',
+          backdrop: `
+                rgba(244,179,194,0.4)
+                url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                left top
+                no-repeat
+                `
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <div id="page" class="centralize">
+      <div id="header" class="centralize">
+        <h1>EU TE AMO</h1>
 
-		<div class="list">
-			<h2>AS COISAS MAIS LINDAS DO MUNDO</h2>
+        <nav class="nav centralize">
+          <ul class="header centralize">
+            <li><a href="index.html">Você</a></li>
 
-			<div class="dentro">
-				<ul class="imagem">
-					<li>Você <a></a></li>
-					<li>Seus olhos</li>
-					<li>Seu sorriso</li>
-					<li>Seu rostinho</li>
-					<li>Seu narizinho</li>
-				</ul>
-			</div>
+            <li><a href="listinha.html">Listinha</a></li>
 
-			<button class="button" onclick="Alert()">
-				APERTA AQUI
-			</button>
-		</div>
-	</div>
-</body>
+            <li><a href="fotinhos.html">Fotinhos</a></li>
+
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="list">
+        <h2>AS COISAS MAIS LINDAS DO MUNDO</h2>
+
+        <div class="dentro">
+          <ul class="imagem">
+            <li>Você <a></a></li>
+            <li>Seus olhos</li>
+            <li>Seu sorriso</li>
+            <li>Seu rostinho</li>
+            <li>Seu narizinho</li>
+          </ul>
+        </div>
+
+        <button class="buttonPersonalized" onclick="modal()">
+          APERTA AQUI
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
