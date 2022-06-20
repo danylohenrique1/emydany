@@ -347,7 +347,7 @@ ul.imagem {
 }
 #next::after {
   content: '';
-  background-image: url(../imagens/iconmonstr-arrow-right-thin.svg);
+  background-image: url(imagens/iconmonstr-arrow-right-thin.svg);
   width: 0px;
   height: 24px;
   opacity: 0;
@@ -361,21 +361,3 @@ ul.imagem {
   transform: translateX(50%);
   width: 24px;
 }
-
-/* .btn::after {
-  content: '';
-  display: block;
-  color: black;
-
-  width: 0;
-  height: 24px;
-  overflow: hidden;
-  background-image: url(../imagens/iconmonstr-arrow-right-thin.svg);
-
-  transition: width 200ms, margin-left 200ms;
-}
-
-.btn:is(:hover, :focus)::affter {
-  width: 24px;
-  margin-left: 8px;
-} */
